@@ -1,0 +1,86 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+:root{
+  
+---cor1:#152617;
+---cor2:#BFF205;
+---cor3:#84A60A;
+---cor4:#D7F205;
+---cor5:#0D0D0D;
+
+---fontetitulo:'Orbitron';
+---fonte1:'Bebas Neue';
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    text-align: center;
+    background-color: var(---cor5);
+    padding:20px;
+    color: white;
+    background-image: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTh1b3FndG85N3hkdjZ5MXE5MDR1cTRoZmY3anF2dm8wczFzcWJyaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/quEsMOrr3hmQ8/giphy.gif);
+    
+}
+header > h1{
+    text-align: center;
+    color:var(---cor4);
+    font-family: var(---fontetitulo);
+    padding:25px;
+    font-size: 27px;
+}
+body{
+    background-color:var(---cor1);
+    font-family: var(---fonte1);
+    background-image: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTh1b3FndG85N3hkdjZ5MXE5MDR1cTRoZmY3anF2dm8wczFzcWJyaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/quEsMOrr3hmQ8/giphy.gif);
+}
+form{
+    text-align: center;
+    background-color: var(---cor5);
+    border-radius: 3px;
+    padding: 5px;
+}
+div{
+    text-align: center;
+    background-color: var(---cor1);
+    border-radius: 3px;
+    padding: 5px;
+    margin:10px;
+    color: var(---cor2);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.397);
+}
+div h3{
+    font-family: var(---fontetitulo);
+    font-size: 25px;
+    color: var(---cor2);
+}
+input [type="radio"]{
+    padding:15px;
+
+}
+footer{
+    text-align: center;
+    color:var(---cor4);
+    margin-top: 5px;
+    font-family: var(---fonte1);
+}
+main{
+    color: white;
+    text-align: center;
+    background-image: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTh1b3FndG85N3hkdjZ5MXE5MDR1cTRoZmY3anF2dm8wczFzcWJyaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/quEsMOrr3hmQ8/giphy.gif);
+}
+.buttão{
+    margin-left: 45%;
+    padding: 2px 5px;
+    background-color: var(---cor3);
+    font-family: var(---fonte1);
+    color: var(---cor5);
+    border: none;
+}
+.buttão:hover{
+     background-color: var(---cor3);
+    transition-duration: 0.70s;
+}

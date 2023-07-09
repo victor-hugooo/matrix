@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+</body>
+</html>
+</head>
+<body>
+  <header><h1>Quiz sobre Matrix</h1></header>
+
+    <main>
+        <form id="quiz-form">
+          <div>
+            <h3>1. Que dupla roteirizou e dirigiu Matrix?</h3>
+            <label>
+              <img src="" alt="">
+              <input type="radio" name="pergunta1" value="a"> Irmãos Wachowski
+            </label>
+            <label>
+              <input type="radio" name="pergunta1" value="b"> Irmãos Coen
+            </label>
+            <label>
+              <input type="radio" name="pergunta1" value="c"> Irmãos Duffer
+            </label>
+          </div>
+        
+        <div>
+          <h3>2. Qual era o outro nome de Neo?</h3>
+          
+            <label>
+              <input type="radio" name="pergunta2" value="a"> Thomas Anderson
+            </label>
+          <label>
+            <input type="radio" name="pergunta2" value="b"> John Smith
+          </label>
+          <label>
+            <input type="radio" name="pergunta2" value="c"> Michael Johnson
+          </label>
+        </div>
+
+        <div>
+          <h3>3. Qual personagem revela ser um traidor?</h3>
+          <label>
+            <input type="radio" name="pergunta3" value="a"> Cypher
+          </label>
+          <label>
+            <input type="radio" name="pergunta3" value="b"> Morpheus
+          </label>
+          <label>
+            <input type="radio" name="pergunta3" value="c"> Trinity
+          </label>
+        </div>
+
+        <div>
+          <h3>4. Após Neo ser capturado pelos agentes misteriosos, o que acontece?</h3>
+          <label>
+            <input type="radio" name="pergunta4" value="a"> Ele é resgatado por Trinity
+          </label>
+          <label>
+            <input type="radio" name="pergunta4" value="b"> Ele se torna um agente
+          </label>
+          <label>
+            <input type="radio" name="pergunta4" value="c"> Ele é colocado em uma simulação
+          </label>
+        </div>
+
+        <div>
+          <h3>5. Qual o nome da nave para onde Neo é levado após escolher a pílula vermelha?</h3>
+          <label>
+            <input type="radio" name="pergunta5" value="a"> Nebuchadnezzar
+          </label>
+          <label>
+            <input type="radio" name="pergunta5" value="b"> Zion
+          </label>
+          <label>
+            <input type="radio" name="pergunta5" value="c"> Osíris
+          </label>
+          
+        </div>
+
+        <div>
+          <h3>6. Por que Trinity acredita que Neo é o Escolhido?</h3>
+          <label>
+            <input type="radio" name="pergunta6" value="a"> Porque ele possui habilidades especiais
+          </label>
+          <label>
+            <input type="radio" name="pergunta6" value="b"> Porque ele é o único que pode derrotar os agentes
+          </label>
+          <label>
+            <input type="radio" name="pergunta6" value="c"> Porque ela leu um oráculo que disse isso
+        </div>
+
+        </label>
+        </main>
+        
+        <script>
+            document.getElementById('quiz-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const correctAnswers = ['a', 'a', 'a', 'c', 'a', 'b']
+      let score = 0;
+      const userAnswers = [
+        document.querySelector('input[name="pergunta1"]:checked').value,
+        document.querySelector('input[name="pergunta2"]:checked').value,
+        document.querySelector('input[name="pergunta3"]:checked').value,
+        document.querySelector('input[name="pergunta4"]:checked').value,
+        document.querySelector('input[name="pergunta5"]:checked').value,
+        document.querySelector('input[name="pergunta6"]:checked').value
+      ];
+      for (let i = 0; i < userAnswers.length; i++) {
+        if (userAnswers[i] === correctAnswers[i]) {
+          score++;
+        }
+      }
+      window.alert(`Você acertou ${score} de ${correctAnswers.length} questões!`)
+      })
+        </script>
+        <br>
+        <button class="buttão" type="submit">Enviar Respostas</button>
+      </form>
+
+      <footer>&copy;SITE CRIADO PELO TURNO DA MANHÃ AVANADE</footer>
+
+</body>
+</html>
